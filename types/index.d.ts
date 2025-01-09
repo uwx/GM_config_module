@@ -164,7 +164,7 @@ export class GM_configStruct<CustomTypes extends string = never> {
      * @param def The default to return if the value is not defined.
      * Only for localStorage fallback
      */
-    getValue(name: string, def: FieldValue): FieldValue;
+    getValue(name: string, def: FieldValue): Promise<FieldValue> | FieldValue;
 
     /** Converts a JSON object to a string */
     stringify(obj: any): string;
