@@ -197,7 +197,7 @@ export class GM_configStruct<CustomTypes extends string = never> {
 }
 
 /** Default GM_config object */
-export let GM_config: GM_configStruct;
+export let GM_config: typeof GM_configStruct;
 
 /* GM_configField and related */
 
