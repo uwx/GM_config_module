@@ -1,0 +1,5 @@
+{
+    "name": "GM_config",
+    "main": "./gm_config.js",
+    "types": "./types/index.d.ts"
+}

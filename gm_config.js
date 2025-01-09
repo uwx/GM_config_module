@@ -920,3 +920,7 @@ GM_configField.prototype = {
     return true;
   }
 };
+
+exports.GM_config = GM_config;
+exports.GM_configStruct = GM_configStruct;
+exports.GM_configField = GM_configField;

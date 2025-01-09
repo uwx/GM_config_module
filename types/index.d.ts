@@ -107,7 +107,7 @@ declare function GM_configInit<CustomTypes extends string>(
 declare function GM_configDefaultValue(type: FieldTypes): FieldValue;
 
 /** Create multiple GM_config instances */
-declare class GM_configStruct<CustomTypes extends string = never> {
+export class GM_configStruct<CustomTypes extends string = never> {
     constructor(options: InitOptions<CustomTypes>)
 
     /** Initialize GM_config */
@@ -197,11 +197,11 @@ declare class GM_configStruct<CustomTypes extends string = never> {
 }
 
 /** Default GM_config object */
-declare let GM_config: GM_configStruct;
+export let GM_config: GM_configStruct;
 
 /* GM_configField and related */
 
-declare class GM_configField {
+export class GM_configField {
     constructor(
         settings: Field,
         stored: FieldValue | undefined,
